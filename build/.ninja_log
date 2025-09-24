@@ -1,0 +1,4 @@
+# ninja log v7
+1	221	1758523422238099186	CMakeFiles/stop_wait.dir/src/StopWait.cpp.o	aa5f15e2c07b4759
+1	223	1758523422238519606	CMakeFiles/stop_wait.dir/src/StopWaitRdtReceiver.cpp.o	40904e3eb8046893
+1	224	1758523422238778274	CMakeFiles/stop_wait.dir/src/StopWaitRdtSender.cpp.o	eff4aaa8d0ffdad5

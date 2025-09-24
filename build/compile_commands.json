@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/build",
+  "command": "/opt/homebrew/bin/aarch64-apple-darwin24-g++-15 -I/Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/include -g -arch arm64   -std=c++11 -o CMakeFiles/stop_wait.dir/src/StopWait.cpp.o -c /Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/src/StopWait.cpp",
+  "file": "/Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/src/StopWait.cpp",
+  "output": "CMakeFiles/stop_wait.dir/src/StopWait.cpp.o"
+},
+{
+  "directory": "/Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/build",
+  "command": "/opt/homebrew/bin/aarch64-apple-darwin24-g++-15 -I/Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/include -g -arch arm64   -std=c++11 -o CMakeFiles/stop_wait.dir/src/StopWaitRdtReceiver.cpp.o -c /Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/src/StopWaitRdtReceiver.cpp",
+  "file": "/Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/src/StopWaitRdtReceiver.cpp",
+  "output": "CMakeFiles/stop_wait.dir/src/StopWaitRdtReceiver.cpp.o"
+},
+{
+  "directory": "/Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/build",
+  "command": "/opt/homebrew/bin/aarch64-apple-darwin24-g++-15 -I/Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/include -g -arch arm64   -std=c++11 -o CMakeFiles/stop_wait.dir/src/StopWaitRdtSender.cpp.o -c /Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/src/StopWaitRdtSender.cpp",
+  "file": "/Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/src/StopWaitRdtSender.cpp",
+  "output": "CMakeFiles/stop_wait.dir/src/StopWaitRdtSender.cpp.o"
+}
+]
