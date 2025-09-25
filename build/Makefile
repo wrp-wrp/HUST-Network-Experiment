@@ -155,6 +155,19 @@ sr/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/build
 .PHONY : sr/fast
 
+#=============================================================================
+# Target rules for targets named TCP
+
+# Build rule for target.
+TCP: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TCP
+.PHONY : TCP
+
+# fast build rule for target.
+TCP/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCP.dir/build.make CMakeFiles/TCP.dir/build
+.PHONY : TCP/fast
+
 src/Gbn.o: src/Gbn.cpp.o
 .PHONY : src/Gbn.o
 
@@ -233,6 +246,7 @@ src/Sr.o: src/Sr.cpp.o
 # target to build an object file
 src/Sr.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/Sr.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCP.dir/build.make CMakeFiles/TCP.dir/src/Sr.cpp.o
 .PHONY : src/Sr.cpp.o
 
 src/Sr.i: src/Sr.cpp.i
@@ -241,6 +255,7 @@ src/Sr.i: src/Sr.cpp.i
 # target to preprocess a source file
 src/Sr.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/Sr.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCP.dir/build.make CMakeFiles/TCP.dir/src/Sr.cpp.i
 .PHONY : src/Sr.cpp.i
 
 src/Sr.s: src/Sr.cpp.s
@@ -249,6 +264,7 @@ src/Sr.s: src/Sr.cpp.s
 # target to generate assembly for a file
 src/Sr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/Sr.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCP.dir/build.make CMakeFiles/TCP.dir/src/Sr.cpp.s
 .PHONY : src/Sr.cpp.s
 
 src/SrRdtReceiver.o: src/SrRdtReceiver.cpp.o
@@ -257,6 +273,7 @@ src/SrRdtReceiver.o: src/SrRdtReceiver.cpp.o
 # target to build an object file
 src/SrRdtReceiver.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/SrRdtReceiver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCP.dir/build.make CMakeFiles/TCP.dir/src/SrRdtReceiver.cpp.o
 .PHONY : src/SrRdtReceiver.cpp.o
 
 src/SrRdtReceiver.i: src/SrRdtReceiver.cpp.i
@@ -265,6 +282,7 @@ src/SrRdtReceiver.i: src/SrRdtReceiver.cpp.i
 # target to preprocess a source file
 src/SrRdtReceiver.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/SrRdtReceiver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCP.dir/build.make CMakeFiles/TCP.dir/src/SrRdtReceiver.cpp.i
 .PHONY : src/SrRdtReceiver.cpp.i
 
 src/SrRdtReceiver.s: src/SrRdtReceiver.cpp.s
@@ -273,6 +291,7 @@ src/SrRdtReceiver.s: src/SrRdtReceiver.cpp.s
 # target to generate assembly for a file
 src/SrRdtReceiver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/SrRdtReceiver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCP.dir/build.make CMakeFiles/TCP.dir/src/SrRdtReceiver.cpp.s
 .PHONY : src/SrRdtReceiver.cpp.s
 
 src/SrRdtSender.o: src/SrRdtSender.cpp.o
@@ -281,6 +300,7 @@ src/SrRdtSender.o: src/SrRdtSender.cpp.o
 # target to build an object file
 src/SrRdtSender.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/SrRdtSender.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCP.dir/build.make CMakeFiles/TCP.dir/src/SrRdtSender.cpp.o
 .PHONY : src/SrRdtSender.cpp.o
 
 src/SrRdtSender.i: src/SrRdtSender.cpp.i
@@ -289,6 +309,7 @@ src/SrRdtSender.i: src/SrRdtSender.cpp.i
 # target to preprocess a source file
 src/SrRdtSender.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/SrRdtSender.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCP.dir/build.make CMakeFiles/TCP.dir/src/SrRdtSender.cpp.i
 .PHONY : src/SrRdtSender.cpp.i
 
 src/SrRdtSender.s: src/SrRdtSender.cpp.s
@@ -297,6 +318,7 @@ src/SrRdtSender.s: src/SrRdtSender.cpp.s
 # target to generate assembly for a file
 src/SrRdtSender.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/SrRdtSender.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCP.dir/build.make CMakeFiles/TCP.dir/src/SrRdtSender.cpp.s
 .PHONY : src/SrRdtSender.cpp.s
 
 src/StopWait.o: src/StopWait.cpp.o
@@ -379,6 +401,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... TCP"
 	@echo "... gbn"
 	@echo "... sr"
 	@echo "... stop_wait"

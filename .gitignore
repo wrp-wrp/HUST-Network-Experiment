@@ -2,8 +2,9 @@
 # Ignore build artifacts, editor files, and common temporary files for C/C++ CMake projects
 
 # Build directory
-/build/
-
+/build
+/bin
+/lib
 # CMake files and cache
 CMakeFiles/
 CMakeCache.txt
@@ -20,6 +21,8 @@ TargetDirectories.txt
 *.exe
 *.out
 *.app
+*.cmake
+*.o
 
 # Object files, dependency files, and libraries
 *.o

@@ -1,28 +1,23 @@
 #include "Global.h"
 #include "SrRdtSender.h"
 
-SrRdtSender::SrRdtSender() : base(0), nextSeqNum(0), waitingState(false)
-{
+SrRdtSender::SrRdtSender() : base(0), nextSeqNum(0), waitingState(false) {
     sendBuffer.resize(WINDOW_SIZE);
     ackReceived.resize(WINDOW_SIZE, false);
 }
 
-SrRdtSender::~SrRdtSender()
-{
+SrRdtSender::~SrRdtSender() {
 }
 
-bool SrRdtSender::getWaitingState()
-{
+bool SrRdtSender::getWaitingState() {
     return waitingState;
 }
 
-bool SrRdtSender::isWindowFull()
-{
+bool SrRdtSender::isWindowFull() {
     return (nextSeqNum - base) >= WINDOW_SIZE;
 }
 
-bool SrRdtSender::isInWindow(int seqNum)
-{
+bool SrRdtSender::isInWindow(int seqNum) {
     return (seqNum >= base && seqNum < base + WINDOW_SIZE);
 }
 
@@ -142,5 +137,5 @@ void SrRdtSender::slideWindow()
         }
     }
     
-    pUtils->printPacket("SR发送方窗口滑动", Packet()); // 打印窗口状态
+    pUtils->printPacket("SR发送方窗口滑动", Packet());
 }
