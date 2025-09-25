@@ -1,5 +1,3 @@
-// Gbn.cpp : 定义GBN协议的控制台应用程序入口点。
-//
 
 #include "Global.h"
 #include "RdtSender.h"
