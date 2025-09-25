@@ -1,3 +1,4 @@
-/Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/build/CMakeFiles/stop_wait.dir
-/Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/build/CMakeFiles/edit_cache.dir
-/Users/rprp/Desktop/学习/计算机网络与通信/模块二/发布给学生的RDT代码/Ubuntu_18.04.3_64_Desktop/StopWait/build/CMakeFiles/rebuild_cache.dir
+/home/wrp/HUST-Network-Experiment/build/CMakeFiles/stop_wait.dir
+/home/wrp/HUST-Network-Experiment/build/CMakeFiles/gbn.dir
+/home/wrp/HUST-Network-Experiment/build/CMakeFiles/edit_cache.dir
+/home/wrp/HUST-Network-Experiment/build/CMakeFiles/rebuild_cache.dir

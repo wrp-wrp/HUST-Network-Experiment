@@ -1,0 +1,5 @@
+Hello World! This is a test message for GBN protocol.
+GBN stands for Go-Back-N.
+This protocol uses sliding window.
+Testing packet transmission.
+End of test data.

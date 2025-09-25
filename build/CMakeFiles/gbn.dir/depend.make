@@ -1,2 +1,2 @@
-# Empty dependencies file for stop_wait.
+# Empty dependencies file for gbn.
 # This may be replaced when dependencies are built.
