@@ -1,4 +1,5 @@
 /home/wrp/HUST-Network-Experiment/build/CMakeFiles/stop_wait.dir
 /home/wrp/HUST-Network-Experiment/build/CMakeFiles/gbn.dir
+/home/wrp/HUST-Network-Experiment/build/CMakeFiles/sr.dir
 /home/wrp/HUST-Network-Experiment/build/CMakeFiles/edit_cache.dir
 /home/wrp/HUST-Network-Experiment/build/CMakeFiles/rebuild_cache.dir

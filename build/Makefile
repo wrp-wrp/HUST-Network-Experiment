@@ -142,6 +142,19 @@ gbn/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gbn.dir/build.make CMakeFiles/gbn.dir/build
 .PHONY : gbn/fast
 
+#=============================================================================
+# Target rules for targets named sr
+
+# Build rule for target.
+sr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sr
+.PHONY : sr
+
+# fast build rule for target.
+sr/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/build
+.PHONY : sr/fast
+
 src/Gbn.o: src/Gbn.cpp.o
 .PHONY : src/Gbn.o
 
@@ -213,6 +226,78 @@ src/GbnRdtSender.s: src/GbnRdtSender.cpp.s
 src/GbnRdtSender.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gbn.dir/build.make CMakeFiles/gbn.dir/src/GbnRdtSender.cpp.s
 .PHONY : src/GbnRdtSender.cpp.s
+
+src/Sr.o: src/Sr.cpp.o
+.PHONY : src/Sr.o
+
+# target to build an object file
+src/Sr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/Sr.cpp.o
+.PHONY : src/Sr.cpp.o
+
+src/Sr.i: src/Sr.cpp.i
+.PHONY : src/Sr.i
+
+# target to preprocess a source file
+src/Sr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/Sr.cpp.i
+.PHONY : src/Sr.cpp.i
+
+src/Sr.s: src/Sr.cpp.s
+.PHONY : src/Sr.s
+
+# target to generate assembly for a file
+src/Sr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/Sr.cpp.s
+.PHONY : src/Sr.cpp.s
+
+src/SrRdtReceiver.o: src/SrRdtReceiver.cpp.o
+.PHONY : src/SrRdtReceiver.o
+
+# target to build an object file
+src/SrRdtReceiver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/SrRdtReceiver.cpp.o
+.PHONY : src/SrRdtReceiver.cpp.o
+
+src/SrRdtReceiver.i: src/SrRdtReceiver.cpp.i
+.PHONY : src/SrRdtReceiver.i
+
+# target to preprocess a source file
+src/SrRdtReceiver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/SrRdtReceiver.cpp.i
+.PHONY : src/SrRdtReceiver.cpp.i
+
+src/SrRdtReceiver.s: src/SrRdtReceiver.cpp.s
+.PHONY : src/SrRdtReceiver.s
+
+# target to generate assembly for a file
+src/SrRdtReceiver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/SrRdtReceiver.cpp.s
+.PHONY : src/SrRdtReceiver.cpp.s
+
+src/SrRdtSender.o: src/SrRdtSender.cpp.o
+.PHONY : src/SrRdtSender.o
+
+# target to build an object file
+src/SrRdtSender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/SrRdtSender.cpp.o
+.PHONY : src/SrRdtSender.cpp.o
+
+src/SrRdtSender.i: src/SrRdtSender.cpp.i
+.PHONY : src/SrRdtSender.i
+
+# target to preprocess a source file
+src/SrRdtSender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/SrRdtSender.cpp.i
+.PHONY : src/SrRdtSender.cpp.i
+
+src/SrRdtSender.s: src/SrRdtSender.cpp.s
+.PHONY : src/SrRdtSender.s
+
+# target to generate assembly for a file
+src/SrRdtSender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sr.dir/build.make CMakeFiles/sr.dir/src/SrRdtSender.cpp.s
+.PHONY : src/SrRdtSender.cpp.s
 
 src/StopWait.o: src/StopWait.cpp.o
 .PHONY : src/StopWait.o
@@ -295,6 +380,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gbn"
+	@echo "... sr"
 	@echo "... stop_wait"
 	@echo "... src/Gbn.o"
 	@echo "... src/Gbn.i"
@@ -305,6 +391,15 @@ help:
 	@echo "... src/GbnRdtSender.o"
 	@echo "... src/GbnRdtSender.i"
 	@echo "... src/GbnRdtSender.s"
+	@echo "... src/Sr.o"
+	@echo "... src/Sr.i"
+	@echo "... src/Sr.s"
+	@echo "... src/SrRdtReceiver.o"
+	@echo "... src/SrRdtReceiver.i"
+	@echo "... src/SrRdtReceiver.s"
+	@echo "... src/SrRdtSender.o"
+	@echo "... src/SrRdtSender.i"
+	@echo "... src/SrRdtSender.s"
 	@echo "... src/StopWait.o"
 	@echo "... src/StopWait.i"
 	@echo "... src/StopWait.s"

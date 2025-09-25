@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/sr.dir/src/Sr.cpp.o CMakeFiles/sr.dir/src/SrRdtSender.cpp.o CMakeFiles/sr.dir/src/SrRdtReceiver.cpp.o -o ../bin/sr  ../lib/libnetsim.a 
