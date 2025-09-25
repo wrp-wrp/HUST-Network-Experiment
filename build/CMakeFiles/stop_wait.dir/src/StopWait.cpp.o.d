@@ -1,13 +1,13 @@
 CMakeFiles/stop_wait.dir/src/StopWait.cpp.o: \
- /home/wrp/HUST-Network-Experiment/src/StopWait.cpp \
+ /root/HUST-Network-Experiment/src/StopWait.cpp \
  /usr/include/stdc-predef.h \
- /home/wrp/HUST-Network-Experiment/include/Global.h \
- /home/wrp/HUST-Network-Experiment/include/Tool.h \
- /home/wrp/HUST-Network-Experiment/include/DataStructure.h \
- /home/wrp/HUST-Network-Experiment/include/NetworkService.h \
- /home/wrp/HUST-Network-Experiment/include/RandomEventEnum.h \
- /home/wrp/HUST-Network-Experiment/include/RdtSender.h \
- /home/wrp/HUST-Network-Experiment/include/RdtReceiver.h \
+ /root/HUST-Network-Experiment/include/Global.h \
+ /root/HUST-Network-Experiment/include/Tool.h \
+ /root/HUST-Network-Experiment/include/DataStructure.h \
+ /root/HUST-Network-Experiment/include/NetworkService.h \
+ /root/HUST-Network-Experiment/include/RandomEventEnum.h \
+ /root/HUST-Network-Experiment/include/RdtSender.h \
+ /root/HUST-Network-Experiment/include/RdtReceiver.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -158,8 +158,7 @@ CMakeFiles/stop_wait.dir/src/StopWait.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/string.h \
- /usr/include/strings.h \
- /home/wrp/HUST-Network-Experiment/include/RdtSender.h \
- /home/wrp/HUST-Network-Experiment/include/RdtReceiver.h \
- /home/wrp/HUST-Network-Experiment/include/StopWaitRdtSender.h \
- /home/wrp/HUST-Network-Experiment/include/StopWaitRdtReceiver.h
+ /usr/include/strings.h /root/HUST-Network-Experiment/include/RdtSender.h \
+ /root/HUST-Network-Experiment/include/RdtReceiver.h \
+ /root/HUST-Network-Experiment/include/StopWaitRdtSender.h \
+ /root/HUST-Network-Experiment/include/StopWaitRdtReceiver.h

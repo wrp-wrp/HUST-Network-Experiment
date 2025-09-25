@@ -1,13 +1,13 @@
 CMakeFiles/gbn.dir/src/GbnRdtSender.cpp.o: \
- /home/wrp/HUST-Network-Experiment/src/GbnRdtSender.cpp \
+ /root/HUST-Network-Experiment/src/GbnRdtSender.cpp \
  /usr/include/stdc-predef.h \
- /home/wrp/HUST-Network-Experiment/include/Global.h \
- /home/wrp/HUST-Network-Experiment/include/Tool.h \
- /home/wrp/HUST-Network-Experiment/include/DataStructure.h \
- /home/wrp/HUST-Network-Experiment/include/NetworkService.h \
- /home/wrp/HUST-Network-Experiment/include/RandomEventEnum.h \
- /home/wrp/HUST-Network-Experiment/include/RdtSender.h \
- /home/wrp/HUST-Network-Experiment/include/RdtReceiver.h \
+ /root/HUST-Network-Experiment/include/Global.h \
+ /root/HUST-Network-Experiment/include/Tool.h \
+ /root/HUST-Network-Experiment/include/DataStructure.h \
+ /root/HUST-Network-Experiment/include/NetworkService.h \
+ /root/HUST-Network-Experiment/include/RandomEventEnum.h \
+ /root/HUST-Network-Experiment/include/RdtSender.h \
+ /root/HUST-Network-Experiment/include/RdtReceiver.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -159,7 +159,7 @@ CMakeFiles/gbn.dir/src/GbnRdtSender.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/string.h \
  /usr/include/strings.h \
- /home/wrp/HUST-Network-Experiment/include/GbnRdtSender.h \
+ /root/HUST-Network-Experiment/include/GbnRdtSender.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \

@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
     
     // 设置输入输出文件路径
     pns->setInputFile("input.txt");
-    pns->setOutputFile("output_sr.txt");
+    pns->setOutputFile("output.txt");
     
     pns->start();
     

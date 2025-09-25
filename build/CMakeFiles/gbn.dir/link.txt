@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/gbn.dir/src/Gbn.cpp.o CMakeFiles/gbn.dir/src/GbnRdtSender.cpp.o CMakeFiles/gbn.dir/src/GbnRdtReceiver.cpp.o -o ../bin/gbn  ../lib/libnetsim.a 
+/usr/bin/g++ -g CMakeFiles/gbn.dir/src/Gbn.cpp.o CMakeFiles/gbn.dir/src/GbnRdtSender.cpp.o CMakeFiles/gbn.dir/src/GbnRdtReceiver.cpp.o -o /root/HUST-Network-Experiment/bin/gbn  /root/HUST-Network-Experiment/lib/libnetsim.a

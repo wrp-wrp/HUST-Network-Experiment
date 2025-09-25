@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../bin/sr"
-  "../bin/sr.pdb"
+  "/root/HUST-Network-Experiment/bin/sr"
+  "/root/HUST-Network-Experiment/bin/sr.pdb"
   "CMakeFiles/sr.dir/src/Sr.cpp.o"
   "CMakeFiles/sr.dir/src/Sr.cpp.o.d"
   "CMakeFiles/sr.dir/src/SrRdtReceiver.cpp.o"

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/sr.dir/src/Sr.cpp.o CMakeFiles/sr.dir/src/SrRdtSender.cpp.o CMakeFiles/sr.dir/src/SrRdtReceiver.cpp.o -o ../bin/sr  ../lib/libnetsim.a 
+/usr/bin/g++ -g CMakeFiles/sr.dir/src/Sr.cpp.o CMakeFiles/sr.dir/src/SrRdtSender.cpp.o CMakeFiles/sr.dir/src/SrRdtReceiver.cpp.o -o /root/HUST-Network-Experiment/bin/sr  /root/HUST-Network-Experiment/lib/libnetsim.a

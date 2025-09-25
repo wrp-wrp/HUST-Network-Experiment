@@ -1,0 +1,60 @@
+# .gitignore for HUST-Network-Experiment
+# Ignore build artifacts, editor files, and common temporary files for C/C++ CMake projects
+
+# Build directory
+/build/
+
+# CMake files and cache
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+Makefile.cmake
+compile_commands.json
+progress.marks
+TargetDirectories.txt
+
+# Binaries
+/bin/
+/build/bin/
+*.exe
+*.out
+*.app
+
+# Object files, dependency files, and libraries
+*.o
+*.obj
+*.lo
+*.d
+*.dSYM/
+*.so
+*.a
+
+# Ignore generic library files but keep lib/libnetsim.a (tracked vendor lib)
+!/lib/libnetsim.a
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*~
+*.iml
+
+# macOS
+.DS_Store
+
+# Logs and runtime outputs
+*.log
+output*.txt
+
+# Coverage and profiler
+coverage/
+*.gcda
+*.gcno
+
+# Misc
+*.user
+*.userprefs
+
+# End of file
+bin/gbn
