@@ -1,5 +1,6 @@
 #include "Global.h"
 #include "SrRdtSender.h"
+#include <iostream>
 
 SrRdtSender::SrRdtSender() : base(0), nextSeqNum(0), waitingState(false) {
     sendBuffer.resize(WINDOW_SIZE);
@@ -87,7 +88,27 @@ void SrRdtSender::receive(const Packet &ackPkt)
             
             // 如果是窗口基包，尝试滑动窗口
             if (ackPkt.acknum == base) {
+                // 先输出滑动前的窗口内容
+                std::cout << "[SR] 滑动前窗口: base=" << base << ", nextSeqNum=" << nextSeqNum << ", 窗口内容: ";
+                for (int i = base; i < nextSeqNum; ++i) {
+                    int idx = i % WINDOW_SIZE;
+                    std::cout << sendBuffer[idx].seqnum << "(" << (ackReceived[idx] ? "ACK" : "NAK") << ") ";
+                }
+                std::cout << std::endl;
+                
                 slideWindow();
+                
+                // 输出滑动后的窗口内容
+                std::cout << "[SR] 滑动后窗口: base=" << base << ", nextSeqNum=" << nextSeqNum << ", 窗口内容: ";
+                if (base < nextSeqNum) {
+                    for (int i = base; i < nextSeqNum; ++i) {
+                        int idx = i % WINDOW_SIZE;
+                        std::cout << sendBuffer[idx].seqnum << "(" << (ackReceived[idx] ? "ACK" : "NAK") << ") ";
+                    }
+                } else {
+                    std::cout << "(空窗口)";
+                }
+                std::cout << std::endl;
             }
             
             // 窗口可能有空间了，更新等待状态

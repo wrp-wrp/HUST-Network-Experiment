@@ -1,10 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 project(NetworkProtocols)
 
-
-
-SET(CMAKE_C_COMPTLER GCC)
-set(CMAKE_CXX FLAGS -fexec-charset=GBK)
+# Toolchain and flags
+SET(CMAKE_C_COMPILER gcc)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fexec-charset=GBK")
 add_definitions(-std=c++11)
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/include)
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
@@ -43,5 +42,5 @@ SET(TCP_SRC
     ${PROJECT_SOURCE_DIR}/src/TCPRdtSender.cpp
     ${PROJECT_SOURCE_DIR}/src/TCPRdtReceiver.cpp
 )
-ADD_EXECUTABLE(TCP ${SR_SRC})
-TARGET_LINK_LIBRARIES(TCP ${NETSIM_LIB})
+ADD_EXECUTABLE(tcp ${TCP_SRC})
+TARGET_LINK_LIBRARIES(tcp ${NETSIM_LIB})

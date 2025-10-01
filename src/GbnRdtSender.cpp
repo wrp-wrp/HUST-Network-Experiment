@@ -1,5 +1,6 @@
 #include "Global.h"
 #include "GbnRdtSender.h"
+#include <iostream>
 
 GbnRdtSender::GbnRdtSender() : base(0), nextSeqNum(0), waitingState(false) {
     sendBuffer.resize(WINDOW_SIZE);
@@ -68,13 +69,23 @@ void GbnRdtSender::receive(const Packet &ackPkt)
             // 停止当前定时器
             pns->stopTimer(SENDER, base);
             // 更新窗口基序号
+            int oldBase = base;
             base = ackPkt.acknum + 1;
-            
+            // 输出滑动窗口内容
+            std::cout << "[GBN] 滑动窗口: base=" << base << ", nextSeqNum=" << nextSeqNum << ", 窗口内容: ";
+            if (base < nextSeqNum) {
+                for (int i = base; i < nextSeqNum; ++i) {
+                    int idx = i % WINDOW_SIZE;
+                    std::cout << sendBuffer[idx].seqnum << " ";
+                }
+            } else {
+                std::cout << "(空窗口)";
+            }
+            std::cout << std::endl;
             // 如果还有未确认的包，重新启动定时器
             if (base < nextSeqNum) {
                 pns->startTimer(SENDER, Configuration::TIME_OUT, base);
             }
-            
             // 窗口可能有空间了，更新等待状态
             waitingState = isWindowFull();
         }

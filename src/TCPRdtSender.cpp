@@ -1,5 +1,6 @@
 #include "Global.h"
 #include "TCPRdtSender.h"
+#include <iostream>
 
 TCPRdtSender::TCPRdtSender() : base(0), nextSeqNum(0), waitingState(false), lastAck(-1), lastAckCnt(0) {
     sendBuffer.resize(WINDOW_SIZE);
@@ -66,7 +67,8 @@ void TCPRdtSender::receive(const Packet &ackPkt)
         // 处理重复ACK
         if (ackPkt.acknum == lastAck) {
             lastAckCnt++;
-            if (lastAckCnt == 3) {
+            if (lastAckCnt >= 3) {
+                std::cout << "[TCP] 快速重传触发: 收到3个重复ACK, base=" << base << std::endl;
                 pUtils->printPacket("TCP发送方收到3个重复ACK，快速重传", ackPkt);
                 // 快速重传最早未确认的包
                 resendPackets();
@@ -75,7 +77,7 @@ void TCPRdtSender::receive(const Packet &ackPkt)
             }
         } else {
             lastAck = ackPkt.acknum;
-            lastAckCnt = 1;
+            lastAckCnt = 0; // 收到新ACK，重复计数重置为0
         }
 
         // 累积确认：确认序号为n的ACK表示序号0到n的所有包都已正确接收
@@ -83,13 +85,23 @@ void TCPRdtSender::receive(const Packet &ackPkt)
             // 停止当前定时器
             pns->stopTimer(SENDER, base);
             // 更新窗口基序号
+            int oldBase = base;
             base = ackPkt.acknum + 1;
-            
+            // 输出滑动窗口内容
+            std::cout << "[TCP] 滑动窗口: base=" << base << ", nextSeqNum=" << nextSeqNum << ", 窗口内容: ";
+            if (base < nextSeqNum) {
+                for (int i = base; i < nextSeqNum; ++i) {
+                    int idx = i % WINDOW_SIZE;
+                    std::cout << sendBuffer[idx].seqnum << " ";
+                }
+            } else {
+                std::cout << "(空窗口)";
+            }
+            std::cout << std::endl;
             // 如果还有未确认的包，重新启动定时器
             if (base < nextSeqNum) {
                 pns->startTimer(SENDER, Configuration::TIME_OUT, base);
             }
-            
             // 窗口可能有空间了，更新等待状态
             waitingState = isWindowFull();
         }
