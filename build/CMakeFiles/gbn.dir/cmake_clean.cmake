@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/HUST-Network-Experiment/bin/gbn"
-  "/root/HUST-Network-Experiment/bin/gbn.pdb"
+  "../bin/gbn"
+  "../bin/gbn.pdb"
   "CMakeFiles/gbn.dir/src/Gbn.cpp.o"
   "CMakeFiles/gbn.dir/src/Gbn.cpp.o.d"
   "CMakeFiles/gbn.dir/src/GbnRdtReceiver.cpp.o"

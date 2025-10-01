@@ -1,13 +1,13 @@
 CMakeFiles/gbn.dir/src/GbnRdtSender.cpp.o: \
- /root/HUST-Network-Experiment/src/GbnRdtSender.cpp \
+ /home/ubuntu/HUST-Network-Experiment/src/GbnRdtSender.cpp \
  /usr/include/stdc-predef.h \
- /root/HUST-Network-Experiment/include/Global.h \
- /root/HUST-Network-Experiment/include/Tool.h \
- /root/HUST-Network-Experiment/include/DataStructure.h \
- /root/HUST-Network-Experiment/include/NetworkService.h \
- /root/HUST-Network-Experiment/include/RandomEventEnum.h \
- /root/HUST-Network-Experiment/include/RdtSender.h \
- /root/HUST-Network-Experiment/include/RdtReceiver.h \
+ /home/ubuntu/HUST-Network-Experiment/include/Global.h \
+ /home/ubuntu/HUST-Network-Experiment/include/Tool.h \
+ /home/ubuntu/HUST-Network-Experiment/include/DataStructure.h \
+ /home/ubuntu/HUST-Network-Experiment/include/NetworkService.h \
+ /home/ubuntu/HUST-Network-Experiment/include/RandomEventEnum.h \
+ /home/ubuntu/HUST-Network-Experiment/include/RdtSender.h \
+ /home/ubuntu/HUST-Network-Experiment/include/RdtReceiver.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -71,9 +71,8 @@ CMakeFiles/gbn.dir/src/GbnRdtSender.cpp.o: \
  /usr/include/c++/11/bits/exception_defines.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/hash_bytes.h \
- /usr/include/c++/11/new /usr/include/c++/11/bits/move.h \
- /usr/include/c++/11/type_traits \
- /usr/include/c++/11/bits/nested_exception.h \
+ /usr/include/c++/11/new /usr/include/c++/11/bits/nested_exception.h \
+ /usr/include/c++/11/bits/move.h /usr/include/c++/11/type_traits \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
@@ -159,7 +158,7 @@ CMakeFiles/gbn.dir/src/GbnRdtSender.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/string.h \
  /usr/include/strings.h \
- /root/HUST-Network-Experiment/include/GbnRdtSender.h \
+ /home/ubuntu/HUST-Network-Experiment/include/GbnRdtSender.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \

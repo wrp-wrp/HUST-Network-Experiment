@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/HUST-Network-Experiment/bin/stop_wait"
-  "/root/HUST-Network-Experiment/bin/stop_wait.pdb"
+  "../bin/stop_wait"
+  "../bin/stop_wait.pdb"
   "CMakeFiles/stop_wait.dir/src/StopWait.cpp.o"
   "CMakeFiles/stop_wait.dir/src/StopWait.cpp.o.d"
   "CMakeFiles/stop_wait.dir/src/StopWaitRdtReceiver.cpp.o"

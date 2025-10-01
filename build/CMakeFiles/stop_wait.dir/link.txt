@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/stop_wait.dir/src/StopWait.cpp.o CMakeFiles/stop_wait.dir/src/StopWaitRdtSender.cpp.o CMakeFiles/stop_wait.dir/src/StopWaitRdtReceiver.cpp.o -o /root/HUST-Network-Experiment/bin/stop_wait  /root/HUST-Network-Experiment/lib/libnetsim.a
+/usr/bin/g++  -fexec-charset=GBK -g CMakeFiles/stop_wait.dir/src/StopWait.cpp.o CMakeFiles/stop_wait.dir/src/StopWaitRdtSender.cpp.o CMakeFiles/stop_wait.dir/src/StopWaitRdtReceiver.cpp.o -o ../bin/stop_wait  ../lib/libnetsim.a 
