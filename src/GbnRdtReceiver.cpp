@@ -39,9 +39,15 @@ void GbnRdtReceiver::receive(const Packet &packet)
         } else {
             // 收到的不是期待的包
             if (packet.seqnum < expectedSeqNum) {
-                // 这是一个重复包，发送ACK但不递交给应用层
+                // 这是一个重复包，发送对"最高按序接收报文"的累计ACK（expectedSeqNum-1）
                 pUtils->printPacket("GBN接收方收到重复报文", packet);
-                sendAck(packet.seqnum);
+                if (expectedSeqNum > 0) {
+                    sendAck(expectedSeqNum - 1);
+                } else {
+                    // 如果还没有正确接收过任何包，发送上次的ACK
+                    pUtils->printPacket("GBN接收方重发上次的确认报文", lastAckPkt);
+                    pns->sendToNetworkLayer(SENDER, lastAckPkt);
+                }
             } else {
                 // 这是一个超前的包，丢弃并发送最近正确接收包的ACK
                 pUtils->printPacket("GBN接收方收到超前报文，丢弃", packet);

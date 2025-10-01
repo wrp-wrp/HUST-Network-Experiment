@@ -36,9 +36,15 @@ void TCPRdtReceiver::receive(const Packet &packet) {
         } else {
             // 收到的不是期待的包
             if (packet.seqnum < expectedSeqNum) {
-                // 这是一个重复包，发送ACK但不递交给应用层
+                // 这是一个重复包，发送对"最高按序接收报文"的累计ACK（expectedSeqNum-1）
                 pUtils->printPacket("TCP接收方收到重复报文", packet);
-                sendAck(packet.seqnum);
+                if (expectedSeqNum > 0) {
+                    sendAck(expectedSeqNum - 1);
+                } else {
+                    // 仍未按序接收过任何报文，重发上次ACK（ack=-1）
+                    pUtils->printPacket("TCP接收方重发上次的确认报文", lastAckPkt);
+                    pns->sendToNetworkLayer(SENDER, lastAckPkt);
+                }
             } else {
                 // 这是一个超前的包，丢弃并发送最近正确接收包的ACK
                 pUtils->printPacket("TCP接收方收到超前报文，丢弃", packet);
